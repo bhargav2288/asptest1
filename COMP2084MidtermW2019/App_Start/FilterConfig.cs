@@ -8,6 +8,8 @@ namespace COMP2084MidtermW2019
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+
+            filters.Add(new RequireHttpsAttribute());
         }
     }
 }

@@ -17,7 +17,7 @@ namespace COMP2084MidtermW2019.Controllers
         // GET: Countries
         public ActionResult Index()
         {
-            return View(db.Countries.ToList());
+            return View(db.Countries.OrderBy(c => c.Name).ToList());
         }
 
         // GET: Countries/Details/5
